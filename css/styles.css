@@ -1,0 +1,101 @@
+:root {
+  /* Colors (Style Guide) */
+  --white: hsl(0, 0%, 100%);
+  --stone-100: hsl(30, 54%, 90%);
+  --stone-150: hsl(30, 18%, 87%);
+  --stone-600: hsl(30, 10%, 34%);
+  --stone-900: hsl(24, 5%, 18%);
+  --brown-800: hsl(14, 45%, 36%);
+  --rose-800: hsl(332, 51%, 32%);
+  --rose-50: hsl(330, 100%, 98%);
+  /* Typography */
+  --font-body: "Outfit", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --font-title: "Young Serif", Georgia, "Times New Roman", serif;
+}
+
+/* Background general */
+.app-bg {
+  background: var(--stone-100);
+  font-family: var(--font-body);
+  font-size: 16px; /* style guide */
+  color: var(--stone-900);
+}
+
+/* Card principal centrada y con ancho ideal */
+.recipe-card {
+  background: var(--white);
+  border-radius: 1.25rem;
+  max-width: 760px;
+}
+
+/* Títulos */
+.recipe-title {
+  font-family: var(--font-title);
+  font-weight: 400;
+  color: var(--stone-900);
+}
+
+.section-title {
+  font-family: var(--font-title);
+  font-weight: 400;
+  color: var(--brown-800);
+}
+
+/* Texto secundario */
+.text-muted-custom {
+  color: var(--stone-600);
+}
+
+/* Preparation box */
+.prep-box {
+  background: var(--rose-50);
+}
+
+.prep-title {
+  color: var(--rose-800);
+  font-weight: 700;
+}
+
+/* Separadores */
+.divider {
+  border: 0;
+  border-top: 1px solid var(--stone-150);
+  opacity: 1;
+}
+
+/* Listas */
+ul li,
+ol li {
+  line-height: 1.7;
+}
+
+.instructions-list li::marker {
+  font-weight: 700;
+  color: var(--brown-800);
+}
+
+/* Tabla nutrition */
+.nutrition-table tr:not(:last-child) {
+  border-bottom: 1px solid var(--stone-150);
+}
+
+.nutrition-table th,
+.nutrition-table td {
+  padding: 0.85rem 0.25rem;
+  vertical-align: middle;
+}
+
+.accent-brown {
+  color: var(--brown-800);
+}
+
+/* Links del footer */
+footer a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+
+footer a:hover,
+footer a:focus {
+  text-decoration: underline;
+}
